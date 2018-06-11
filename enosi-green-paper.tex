@@ -69,7 +69,7 @@
 % Macros
 % nil
 
-\title{Enosi Green Paper\\ v0.2}
+\title{Enosi Green Paper\\ v0.3}
 \author{Samuel Brooks, Matthew Hale, Steve Hoy}
 \date{}
 
@@ -79,8 +79,8 @@
 
 \begin{abstract}
 \noindent Modern energy markets are structurally inefficient, resulting in higher-than-neccessary electricity prices and frustration of investment into appropriate renewable infrastructure.
-Grid 2.0 technologies, coupled with cheap, renewable solar, can optimise the generation and distribution architecture of aging energy networks and slash cost from the energy stack.
-Critically, electricity companies in commercial competition with one another within a given energy market naturally segment the customer base, resulting in structurally sub-optimal risk management for the purchase and provision of electricity. By using distributed ledger technology, Enosi proposes to split this business model into two, thereby creating a competitive market for load profiles and optimised credit risk, resulting in lower electricity prices for end consumers.
+Grid 2.0 technologies, including cheaper solar power, can optimise the generation and distribution architecture of aging energy networks and slash cost from the energy stack.
+Critically, electricity companies in commercial competition with one another within a given energy market naturally segment the customer base, resulting in structurally sub-optimal risk management for the purchase and provision of electricity. By using distributed ledger technology, the Enosi system splits this business model into two, thereby creating a competitive market for load profiles and optimising credit risk, resulting in lower electricity prices for end consumers.
 \end{abstract}
 \vspace{20mm}
 \begin{center}
@@ -120,13 +120,13 @@ Critically, electricity companies in commercial competition with one another wit
 
 \section{Introduction}
 
-Globally, it is now clear that a number of issues have resulted from a centralised power generation architecture, including the stimulation of the use of fossil fuels in order to extend the life of existing assets, a power-inefficient transmission system, and regulation which supports incumbency and stymies innovation. Even though Australia is one of the most deregulated energy markets in the world, it structurally inhibits local (distributed) generation and consumption. \\
+Globally, it is now clear that a number of issues have resulted from a centralised power generation architecture, including a power-inefficient transmission system, the stimulation of the use of fossil fuels in order to extend the life of existing assets, and regulation which supports incumbency and stymies innovation. Even though Australia is one of the most deregulated energy markets in the world, it structurally inhibits local (distributed) generation and consumption. \\
 
 \noindent Enosi seeks to provide the means for small and startup energy businesses and not-for-profit entities to compete in established markets. Providing such an equal opportunity fosters competition with incumbent players, allowing more competitive and more relevant services to be offered to energy consumers, such as the facility for localised peer-to-peer energy trading, control over the provenance of their electricity, and transparency of cost. \\
 
-\noindent The key enabler for this shift is the ability for all actors in a retail energy market to access a shared understanding of (i) energy usage data and (ii) pricing and settlement logic that acts over that data. Distributed ledger technology enables us to build such shared data and logic systems, including standardised software and business process workflows. Indeed, cryptographically-secure methods of sharing both information and logic are the only way to orchestrate the necessary cooperation to achieve the economies of scale necessary to provide localised services and price-efficient community energy. By taking full advantage of distributed ledger technology, as well as “Grid 2.0” technologies such as smart meters, we can create very efficient networks of interconnected retailers, Neo-retailers and customers to both cooperate and compete with one another.\\
+\noindent The key enabler for this shift is the ability for all actors in a retail energy market to access a shared understanding of (i) energy usage data and (ii) pricing and settlement logic that acts over that data. Distributed ledger technology enables us to build such shared data and logic systems, including standardised software and business process workflows. Indeed, cryptographically-secure methods of sharing both information and logic are the only way to orchestrate the necessary cooperation to achieve the economies of scale necessary to provide localised services and price-efficient community energy. By taking full advantage of distributed ledger technology, as well as “Grid 2.0” technologies such as smart meters, we can create very efficient networks of interconnected retailers, Neo-retailers and end-consumers who both cooperate and compete with one another.\\
 
-\noindent Enosi is developing a distributed ledger software platform to provide the tools and network effect to enable small and community-based actors to disrupt established energy market players. It is a not-for-profit foundation developing this platform as a Software-as-a-Token model, and will be initially funded as an ICO. While the software will be made open source, the token is required to access individual energy networks (geographical markets).\\
+\noindent Enosi is developing a distributed ledger software platform to provide the tools and network effect to enable small and community-based actors to disrupt established energy market players. It is a not-for-profit foundation developing this platform as free software but with an associated a Network-as-a-Token model, and will be initially funded as an ICO. While the software will be made open source, the token is required to access individual energy networks (geographical markets).\\
 
 \noindent "We are here to change the electricity industry, because the incumbents won’t."\\
 - Stefan Jarnson, Enosi Project
@@ -143,7 +143,7 @@ Currently, there exists two key structural inefficiencies in modern energy marke
 
 \subsubsection{Inefficient buying risk management}
 
-The first is the segregation of loads due to customer segmentation within a market; most customers within an energy market are contracted to a small number of large energy companies to provide their electricity. These companies manage their own buying risk with the wholesale electricity market (power generation companies sell into this wholesale market). Modern electricity regulation in most jurisdictions globally require continuity of service for end-consumers, and this means that protections exist for generators against the interposing energy retailer mismanaging its balance sheet and being unable to pay generators for the electricity it is required to buy and supply to its customers. This protection takes the form of a credit or bond held on trust with the local regulator in the event that the retailer cannot pay its bill to the wholesale market. However even within this context, energy retailers still seek to make a profit, and this comes from improving the efficiency of their risk management in buying power from the wholesale market and selling it to end consumers. \\
+The first is the segregation of loads due to customer segmentation within a market; most customers within an energy market are contracted to a small number of large energy companies to provide their electricity. These companies manage their own buying risk with the wholesale electricity market (power generation companies sell into this wholesale market). Modern electricity regulation in most jurisdictions globally require continuity of service for end-consumers, and this means that protections exist for generation companies against the interposing energy retailer mismanaging its balance sheet and being unable to pay the generators for the electricity it is required to buy and supply to its customers. This protection takes the form of a credit or bond held on trust with the local regulator in the event that the retailer cannot pay its bill to the wholesale market. However even within this context, energy retailers still seek to make a profit, and this can only be achieved by improving the efficiency of their risk management in buying power from the wholesale market and selling it to end consumers. Where this done improperly, and in the case where wholesale prices skyrocket such as in an adverse weather event, it can lead to the prompt failure of the business.\\
 
 \noindent Because the market is segregated between these energy retailers who are in competition, an optimal risk management strategy is never able to be achieved; the most efficient scenario is one where all customer load profiles, both commercial and residential, are aggregated to produce a ‘flat’ a demand as possible, making the prediction of what electricity is necessary to purchase as accurate as possible. A completely predictable load profile is one which can be easily satisfied, and the greater the number of customers within a market smooths out this load profile making it more predictable.
 
@@ -157,57 +157,55 @@ Nelson bay example.
 
 \subsection{Solution Space}
 
-The key to unlocking value in these energy markets is to reconfigure the market with a fundamentally more efficient set of actors. Specifically, we propose decomposing the traditional energy retailer into two distinct parts: a wholesale Licensed Supplier, and a Neo-retailer.\\
+The key to unlocking value in these energy markets is to reconfigure the market with a different set of actors who can interact in a fundamentally more efficient way. Specifically, we propose decomposing the traditional energy retailer into two distinct parts: a wholesale Licensed Supplier, and a Neo-retailer.\\
 
-\noindent \textbf{Licensed Supplier} - a company or other entity who buys electricity from the wholesale market and sells it into the retail market, typically via a Neo-retailer. Licensed Suppliers are required to abide by existing prudential regulations, including holding capital to protect creditors (electricity generation businesses) against a failure of their credit risk operations.\\
+\noindent \textbf{Licensed Supplier}: a company or not-for-profit entity who buys electricity from the wholesale market and sells it into the retail market, typically via a Neo-retailer. Licensed Suppliers are required to abide by existing prudential regulations, including holding capital to protect creditors (electricity generation businesses) against a failure of their credit risk operations.\\
 
-\noindent \textbf{Neo-retailer} - a company or other entity which specialises in providing customer-facing services, including customer acquisition, metering, billing, and ancillary services such as peer-to-peer energy functions. Neo-retailers may be operated by anyone, including not-for profit community groups, or tangentially related business (such as electric vehicle manufacturers) who can market more specific value propositions to their customers.\\
+\noindent \textbf{Neo-retailer}: a company or not-for-profit entity who specialises in providing customer-facing services, including customer acquisition, metering, billing, and ancillary services such as peer-to-peer energy functions. Neo-retailers do not require an electricity market license, and so may be operated by anyone, including not-for profit community groups, or tangentially related business (such as electric vehicle manufacturers) who can market more specific value propositions to their customers.\\
 
-\vspace{2mm}
-
+\begin{figure}
 \begin{center}
 \includegraphics[width=250pt]{/home/samuel/dev/block8/green-paper/enosi-retailer-split.pdf}\\
+\caption{Splitting of the traditional retail energy business.}
 \end{center}
+\end{figure}
 
 
 \noindent The effect of this will be to:
 
 \begin{itemize}
-\item{Create a single marketplace for Neo-retailers to acquire customers, and for Neo-retailers in turn to publically advertise and on-sell their unique customer load profile. This enables Licensed Suppliers to compliment their sell profile in order to optimise their buying profile, and in turn offer more competitive pricing to the Neo-retailer.}
-\item{Reduce the cost of customer management functions by supporting not-for-profit entities to act as Neo-retailers. Such entities will be structurally more competitive than traditional for-profit service companies, resulting in cheaper electricity prices for end customers.}
-\item{Create a more diverse set of Neo-retailers more able to satisfy customer subgroups.}
+\item{Create a single marketplace for Neo-retailers to acquire customers, and for Neo-retailers in turn to publically advertise and on-sell their unique customer load profile to Licensed Suppliers. This enables Licensed Suppliers to compliment their sell profile in order to optimise their buying profile, and in turn offer more competitive pricing to the Neo-retailer.}
+\item{Reduce the cost of customer management functions by supporting not-for-profit entities to act as Neo-retailers. Such entities will be structurally more competitive than traditional for-profit service companies, resulting in cheaper electricity prices for end-customers.}
+\item{Create a more diverse set of Neo-retailers more able to satisfy the needs of customer subgroups.}
 \item{Accelerate the use of smart metering as Neo-retailers can form around this technology to offer even cheaper and more efficient retailing services by removing the need for manual meter-reading.}
 \item{Accelerate the use of distributed generation (e.g. rooftop solar) as it becomes easier for actors to enter the market and offer peer-to-peer services.}
 \end{itemize} 
 
-\noindent Creating such a network is achievable by using distributed ledgers to efficiently share metering and customer data as well as adhere to a common standard for the energy retailing stack. Having all market actors running common software for standardising basic energy information (e.g. metering) and logic (e.g. billing) means that interoperation between market players becomes possible (integrating every disparate system together, or creating a separate for-profit company dedicated to interfacing between every system would be impractical). It is only via the creation of a not-for-profit foundation, run by individuals who are incentivised to improve the value of the network, does such a singular network become possible. \\
+\noindent Creating such a network is achievable by using distributed ledger technology to efficiently share metering and customer data as well as adhere to a common standard for the energy retailing stack. Having all market actors running common software to standardise energy data (e.g. metering) and logic (e.g. billing) means that interoperation between market players becomes possible; it would be impractical to integrate together every disparate system that currently exists, or create a separate for-profit company dedicated to interfacing between them all. It is only via the creation of a not-for-profit foundation, run by individuals who are incentivised to improve the value of the network, does such a singular network become possible. \\
 
-\vspace{2mm}
+\noindent Enosi is therefore tasked with building the software that enables these interactions, thereby reducing the cost stack for Neo-retailers and enabling Licensed Suppliers to more effectively hedge their wholesale risk by accessing the aggregated load profiles of consumers. \\
+
+\begin{figure}
 \begin{center}
-\includegraphics[width=250pt]{/home/samuel/dev/block8/green-paper/enosi-stack.pdf}
+\includegraphics[width=200pt]{/home/samuel/dev/block8/green-paper/enosi-stack.pdf}
+\caption{Separation of licensed and retail entities in the energy stack.}
 \end{center}
-\vspace{3mm}
+\end{figure}
 
-\noindent As the network grows and matures over time, this will create further incentives for Licensed Suppliers to cooperate and ultimately aggregate into super-operators in order to continue to take advantage of sell-side aggregation of load profiles. Setting up such a network will naturally break down the fragmented market through these continued cooperative agreements. Because Neo-retailers are in custody of their own data and logic (including a customer identity) and that within the market Neo-retailers are able to easily switch between their electricity supplier, this aggregation will not be anti-competitive. \\
+\noindent As the network grows and matures over time, it will create second-order incentives for Licensed Suppliers to cooperate (and ultimately aggregate into super-operators) in order to continue to take advantage of sell-side aggregation of load profiles. This network will naturally dissolve a fragmented market through an increasing number of cooperative agreements. Because Neo-retailers are in custody of their own data and logic (including a customer identity), and that within the market Neo-retailers are able to easily switch between their electricity supplier, this aggregation cannot cause anti-competitive monopolies.
 
-\vspace{2mm}
+\begin{figure}
 \begin{center}
 \includegraphics[width=300pt]{/home/samuel/dev/block8/green-paper/enosi-cla.pdf}
+\caption{Financial agreements between wholesale energy traders.}	
 \end{center}
-\vspace{2mm}
-
-\noindent Enosi is building software that will both reduce the cost stack for Neo-retailers, and enable Licensed Suppliers to more effectively hedge their wholesale risk by accessing the aggregated load profiles of consumers (through the Neos). \\
-
-\noindent This phase should be kept as open as possible with respect to the roles (and combination of roles) that each actor could play. We should allow retailers and neos to choose their business model. \\
-
-\noindent The number of exceptions dealt with by a Neo somewhat limits the maximum size to which they can feasibly grow before it becomes too difficult and expensive to deal with the exceptions. Hence, we assume distributed exceptions to be managed by neos.
+\end{figure}
 
 \subsection{End state}
 
-The end state sees a DAO functioning as a wholesale market player owned/governed by Neos and community members. In the end state, once the regulatory environment is ready, Enosi plans to bring the wholesale buying functionality into the ecosystem itself. The various conglomerate wholesale buying entities would be replaced by a single DAO, per wholesale jurisdiction, that would handle all the wholesale market interactions on behalf of the Neos. 
-The motivations of this wholesale DAO would be to serve the community first, and not place great emphasis on profit making. At this point in time, the way energy is procured and distributed to Neos and eventually customers is run entirely for the community. \\
+The ultimate arrangement of the network within a given market will see maximal connectivity between Licensed Suppliers and Neo-retailers who follow their incentives. Once this process reaches its equilibrium, the end-state of the network will effectively become a Distributed Autonomous Organisation (DAO) functioning as a wholesale market player that is owned and governed by Neo-retailers and community members. In this end state, the regulatory environment will be ready to be reformed to bring wholesale buying into the ecosystem as well. In this scenario, the various conglomerate wholesale buying entities will be replaced by a single DAO, per wholesale jurisdiction, that would handle all the wholesale market interactions on behalf of the Neo-retailers. \\
 
-\noindent We’re breaking apart the retailer model and rebuilding it with the community at the centre. 
+\noindent At this point in time, the way energy is procured and distributed to Neo-retailers and eventually end-consumers is run entirely for the community via market Enosi DAOs (EDAO). The Enosi project is breaking apart the existing inefficient retailer model and rebuilding it with the community at the centre. 
 
 \subsubsection{Actor definitions}
 
@@ -580,6 +578,8 @@ Other actors may wish to be a part of the ecosystem, and these offer another dim
 
 \subsection{Exception management}
 
+\noindent The number of exceptions dealt with by a Neo somewhat limits the maximum size to which they can feasibly grow before it becomes too difficult and expensive to deal with the exceptions. Hence, we assume distributed exceptions to be managed by neos.
+
 exceptions are distributed over each retailer… in this way they gain the benefits of larger players whilst retaining the agility and lightness of small retailers. If a neoretailer was to grow in size to a significant customer base - this would necessitate a greater investment into the exception process. This, however, over time, will become easier with maturing technology.\\
 
 Preconditions\\
@@ -831,6 +831,11 @@ The Enosi foundation \\
 The Enosi Foundation Trusts:\\
 
 EDAO Creators Trust:\\
+
+
+
+\noindent This phase should be kept as open as possible with respect to the roles (and combination of roles) that each actor could play. We should allow retailers and neos to choose their business model. \\
+
 
 
 \end{document}

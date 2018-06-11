@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.1)  6 JUN 2018 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.1)  11 JUN 2018 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1315,12 +1315,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
  []
 
 
-Overfull \hbox (0.37785pt too wide) in paragraph at lines 164--165
-\OT1/cmr/bx/n/10 Neo-retailer \OT1/cmr/m/n/10 (-10) - a com-pany or other en-ti
-ty which spe-cialises in pro-vid-ing customer-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
@@ -1336,10 +1330,15 @@ File: /home/samuel/dev/block8/green-paper/enosi-retailer-split.pdf Graphic file
  (type pdf)
 <use /home/samuel/dev/block8/green-paper/enosi-retailer-split.pdf>
 Package pdftex.def Info: /home/samuel/dev/block8/green-paper/enosi-retailer-spl
-it.pdf  used on input line 169.
+it.pdf  used on input line 168.
 (pdftex.def)             Requested size: 250.0pt x 127.74599pt.
 [5 </home/samuel/dev/block8/green-paper/enosi-retailer-split.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
@@ -1348,68 +1347,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 pdfTeX warning: pdflatex (file /home/samuel/dev/block8/green-paper/enosi-stack.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-</home/samuel/dev/block8/green-paper/enosi-stack.pdf, id=230, 294.34969pt x 348
+</home/samuel/dev/block8/green-paper/enosi-stack.pdf, id=231, 294.34969pt x 348
 .55219pt>
 File: /home/samuel/dev/block8/green-paper/enosi-stack.pdf Graphic file (type pd
 f)
 <use /home/samuel/dev/block8/green-paper/enosi-stack.pdf>
 Package pdftex.def Info: /home/samuel/dev/block8/green-paper/enosi-stack.pdf  u
-sed on input line 187.
-(pdftex.def)             Requested size: 250.0pt x 296.03673pt.
+sed on input line 190.
+(pdftex.def)             Requested size: 200.0pt x 236.83151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-
- []
-
-[6 </home/samuel/dev/block8/green-paper/enosi-stack.pdf>]
 
 pdfTeX warning: pdflatex (file /home/samuel/dev/block8/green-paper/enosi-cla.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-</home/samuel/dev/block8/green-paper/enosi-cla.pdf, id=243, 310.15875pt x 217.5
+</home/samuel/dev/block8/green-paper/enosi-cla.pdf, id=232, 310.15875pt x 217.5
 628pt>
 File: /home/samuel/dev/block8/green-paper/enosi-cla.pdf Graphic file (type pdf)
 
 <use /home/samuel/dev/block8/green-paper/enosi-cla.pdf>
 Package pdftex.def Info: /home/samuel/dev/block8/green-paper/enosi-cla.pdf  use
-d on input line 195.
+d on input line 199.
 (pdftex.def)             Requested size: 300.0pt x 210.43478pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+[6] [7 </home/samuel/dev/block8/green-paper/enosi-stack.pdf> </home/samuel/dev/
+block8/green-paper/enosi-cla.pdf
+
+pdfTeX warning: pdflatex (file /home/samuel/dev/block8/green-paper/enosi-cla.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Overfull \hbox (7.66988pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 (-10) The end state sees a DAO func-tion-ing as a whole-sale ma
-r-ket player owned/governed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
-
- []
-
-[7 </home/samuel/dev/block8/green-paper/enosi-cla.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
-
- []
-
-
-Overfull \hbox (17.80617pt too wide) in paragraph at lines 217--275
+Overfull \hbox (17.80617pt too wide) in paragraph at lines 215--273
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-[8]
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
@@ -1439,33 +1427,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
-
- []
-
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--355
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
@@ -1479,13 +1467,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
@@ -1499,22 +1487,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
@@ -1535,21 +1523,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 435--436
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
-
- []
-
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 472--473
 
  []
@@ -1569,22 +1557,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 478--479
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
-
- []
-
 [17]
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
@@ -1610,26 +1598,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 531--532
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--543
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
-
- []
-
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 583--584
 
  []
@@ -1654,7 +1637,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
-[19] [20]
+[20] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 616--617
 
  []
@@ -1674,7 +1657,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 622--623
 
  []
 
-[21] [22] [23] [24]
+[22] [23] [24] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 792--793
 
  []
@@ -1694,7 +1677,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 804--809
 
  []
 
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 810--811
 
  []
@@ -1739,24 +1722,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 833--834
 
  []
 
-[26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 836.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 836.
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--838
+
+ []
+
+[27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 841.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 841.
  (./enosi-green-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 836.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 836.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 841.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 841.
 Package rerunfilecheck Info: File `enosi-green-paper.out' has not changed.
 (rerunfilecheck)             Checksum: 805B063CA20EF21AE469B895F2828365;2181.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 836.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 841.
  ) 
 Here is how much of TeX's memory you used:
- 32952 strings out of 494880
- 762830 string characters out of 6179602
- 979259 words of memory out of 5000000
- 35597 multiletter control sequences out of 15000+600000
- 16644 words of font info for 88 fonts, out of 8000000 for 9000
+ 32954 strings out of 494880
+ 762865 string characters out of 6179602
+ 979269 words of memory out of 5000000
+ 35599 multiletter control sequences out of 15000+600000
+ 16542 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 69i,9n,100p,1113b,1900s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,9n,100p,1304b,1900s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
@@ -1769,10 +1757,10 @@ s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on enosi-green-paper.pdf (26 pages, 1410126 bytes).
+Output written on enosi-green-paper.pdf (27 pages, 1411070 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
  16172 words of extra memory for PDF output out of 17280 (max. 10000000)
 
