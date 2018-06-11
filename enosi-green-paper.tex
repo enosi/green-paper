@@ -135,7 +135,7 @@ Globally, it is now clear that a number of issues have resulted from a centralis
 
 
 \pagebreak
-\section{Solution Design}
+\section{Solution Description}
 
 \subsection{Problem Space}
 
@@ -203,9 +203,11 @@ The key to unlocking value in these energy markets is to reconfigure the market 
 
 \subsection{End state}
 
-The ultimate arrangement of the network within a given market will see maximal connectivity between Licensed Suppliers and Neo-retailers who follow their incentives. Once this process reaches its equilibrium, the end-state of the network will effectively become a Distributed Autonomous Organisation (DAO) functioning as a wholesale market player that is owned and governed by Neo-retailers and community members. In this end state, the regulatory environment will be ready to be reformed to bring wholesale buying into the ecosystem as well. In this scenario, the various conglomerate wholesale buying entities will be replaced by a single DAO, per wholesale jurisdiction, that would handle all the wholesale market interactions on behalf of the Neo-retailers. \\
+The ultimate arrangement of the network within a given market will see maximal connectivity between Licensed Suppliers and Neo-retailers who follow their incentives. Once this process reaches its equilibrium, the end-state of the network will effectively become a Distributed Autonomous Organisation (DAO) functioning as a wholesale market player that is owned and governed by Neo-retailers and community members. In this end state, the regulatory environment will be ready to be reformed to bring wholesale buying into the ecosystem as well. In this scenario, the various aggregated wholesale buying entities will be replaced by a single DAO, per wholesale jurisdiction, that would handle all the wholesale market interactions on behalf of the Neo-retailers. \\
 
-\noindent At this point in time, the way energy is procured and distributed to Neo-retailers and eventually end-consumers is run entirely for the community via market Enosi DAOs (EDAO). The Enosi project is breaking apart the existing inefficient retailer model and rebuilding it with the community at the centre. 
+\noindent At this point in time, the way energy is procured and distributed to Neo-retailers and eventually end-consumers is run entirely for the community via market Enosi DAOs (EDAO). The Enosi project is breaking apart the existing inefficient retailer model and rebuilding it with the community at the centre.\\
+
+\noindent The cryptoeconomic incentive scheme supporting this network effect, including the use of the \textbf{Joul}, is described in later sections.
 
 \subsubsection{Actor definitions}
 
@@ -274,9 +276,9 @@ A summary of the various actors and their role in the ecosystem is given below:\
 
 \subsection{Trust Design}
 
-In order to understand how to develop smart contracts between the defined actors, we must understand which of those actors are in a natural financial contention, that is, for which actor pairs do we need to program in trust into the Enosi permissioned distributed ledger system? \\
+In order to understand how to develop smart contracts between the defined actors, we must understand which of those actors are in a natural financial contention, that is, for which actor pairs do we need to write trust management programs into the Enosi permissioned distributed ledger system? \\
 
-\noindent We consider the following trust relationships as they exist today and how they will change on the Enosi platform:
+\noindent We consider the following trust relationships as they exist today and how they can be automated:
 
 \begin{itemize}
 \item{\textbf{Current}: Customers trust that billing is accurate and fair between them and their "Retailer" (Licensed Supplier). \\
@@ -318,6 +320,16 @@ In some scenarios, a consumer may wish to reduce their costs, while a Neo-retail
 \item{ \textbf{Consumer - Consumer}:
 There may be concerns that other consumers are bad actors wanting to exploit their data if shared with others. However, some communities might have a higher level of inherent trust than others and will share data with permissions.}
 
+\end{itemize}
+
+\subsubsection{Other requirements}
+
+Other key elements to the interoperation of these actors includes:
+
+\begin{itemize}
+\item{ Identity standards for all standard actor types (e.g. a fully-featured consumer identity that satisfies the requirements of Licensed Suppliers, Neo-retailers and other consumers).}
+\item{ Interfaces for external actors, such as regulators, to interact with the system. }
+\item{ Standarised software for basic operational tasks, such as an interface to the load profile market, customer onboarding, billing and settlement functions.}
 \end{itemize}
 
 
@@ -399,38 +411,32 @@ Currently, grid power is always netted and so electricity is never stored or owe
 
 There are several challenges with tokens whose primary utility within their ecosystem is settlement. For our purposes, these will be called medium of exchange tokens.\\
 
-\noindent In medium of exchange token ecosystems, tokens may cycle through the system as a whole very quickly. For example, if the network grows to be significantly large, the transactional volume of the token will be high, but so would the token velocity, i.e. how quickly tokens move through the system end to end.\\
+\noindent In medium of exchange token ecosystems, tokens may cycle through the system as a whole very quickly. For example, if the network grows to be significantly large, the transactional volume of the token will be high, but so will the token velocity, i.e. how quickly tokens move through the system end to end.\\
 
-\noindent A high token velocity is problematic because there is no incentive to hold the token and incur price risk relative to the dollar (or other cryptocurrencies, for that matter). This is because in order to settle, one simply needs to buy the required quantity of tokens at settlement time only, thereby increasing sell pressure at all other times. Fundamentally, if there is no need for the average user to hold on to the token then the token’s price is only linked to speculation.\\
+\noindent A high token velocity is problematic because there is no incentive to hold the token and incur price risk relative to fiat currencies (or other cryptocurrencies, for that matter). This is because in order to settle, one simply needs to buy the required quantity of tokens at settlement, thereby increasing sell pressure at all other times. Fundamentally, if there is no need for regular users to hold on to the token then the token’s price is only linked to speculation.\\
 
 \noindent Contrastingly, if everyone holds the tokens and no one is using them within the ecosystem or trading them outside of it, transactional volume collapses as does the price of the token because there is no demand. There is clearly a need for a delicate balance between incentives to hold tokens, and incentives to use them. Thus, a finely tuned token velocity is required when designing token economy mechanics.\\
 
-\noindent Furthermore, the volatility of most tokens and cryptocurrencies renders them effectively useless as means of settlement that everyday people actually want to use. Solving the volatility of cryptocurrencies is clearly non-trivial and we believe lies outside the scope of the Enosi project.\\
-
-\noindent Thus, we propose that settlement be removed as the primary utility of the JOUL and to leave the role of settlement open. We recommend suggesting in the whitepaper how settlement could be achieved on day one (i.e. with fiat billing through a Neo-retailer/retailer) and how it would ideally be accomplished in the future (i.e. through stable coins such as the Havven stablecoin system or other digital representations of fiat).
-
-
+\noindent Perhaps most critically, the price-volatile tokens and cryptocurrencies are effectively useless as means of settlement when pricing of goods and services is in fiat. Solving the volatility of cryptocurrencies is non-trivial and lies outside the scope of the Enosi project. Hence, settlement is not a part of the primary utility of the Joul token, and the function of settlement in the ecosystem remains to be implemented via the use of a stablecoin, digital fiat, or regular payment rails.
 
 
 
 \pagebreak
 \section{Token Mechanics}
 
-\noindent The objective of the programming of the token representing the value of the network (the Joul), is to encourage network cohesion; that is, incentivise the defined market actors to continue to operate with other actors within the network in order to support the benefits that arise from the network being in existence.
+\noindent The objective of the programming of the token (the Joul) is to encourage network cohesion; that is, incentivise the defined market actors to continue to interoperate with each other in order to support the benefits that arise from the existence of the network.
 
 \subsection{Staking}
 
 \subsubsection{Staking functions}
 
-<reference to blog post?>
-
 \noindent The base token mechanic is a staking function. \\
 
-\noindent Both Licensed Suppliers and Neo-retailers are required to stake tokens to participate in the network. While a stake is not initially required for a startup or very small platform actor, (i.e. to be permissioned initially), the required stake grows as a function of how many customers are connected to that particular actor. This effectively incentivises smaller participants to initiate their energy market endeavours on the Enosi platform and encourage a decentralised retailing model. The staking function is based on the incremental cost per customer, being zero for a startup actor with zero connections, and near-zero for a very small player, but eventually becomes more for larger actors to onboard a customers. \\
+\noindent Both Licensed Suppliers and Neo-retailers are required to stake tokens to participate in the network, depending on their measured "size". A stake is not initially required for a startup or very small platform actors, (i.e. to be initially permissioned), but the required stake grows as a function of how many customers are connected to that particular actor. This effectively incentivises smaller participants to initiate their energy market endeavours on the Enosi platform and encourage a decentralised retailing model. The staking function is based on the incremental cost per customer, being zero for a startup actor with zero connections, and near-zero for a very small player, but eventually becomes more for larger actors to onboard new customers. \\
 
-\noindent Let us define a family of staking functions belonging to the set of actors within the Enosi ecosystem: $S_C(c)$, $S_L(c)$, $S_N(c)$, $S_A(c)$, for each of our defined actors, \textbf{Consumer}, \textbf{Licenced Suppler}, \textbf{Neo-retailer}, and \textbf{Application Provider}. These staking functions will calculate the required number of Jouls, $J$, per actor type, the number of customers ($c$), that are connected to that actor. DAOs assume another actor type and the Enosi foundation is not required to stake to participate and so we do not define functions for these actors. \\
+\noindent Formally, we define a family of staking functions: $S_C(c)$, $S_L(c)$, $S_N(c)$, $S_A(c)$, for the set of defined actors within the Enosi ecosystem, \textbf{Consumer}, \textbf{Licenced Suppler}, \textbf{Neo-retailer}, and \textbf{Application Provider}. These staking functions will calculate the required number of Jouls, $J$, per actor type, the number of customers, $c$, that are connected to that actor. DAOs are not a distinct actor type (it assumes another actor type), and the Enosi foundation is not required to stake to participate, and so we do not define functions for these actors. \\
 
-\noindent In order for the software to be as easy to use for as many consumers as possible, we define $S_C(c) = 0$, and relegate the need to procure and stake Jouls to Licenced Suppliers, Neo-retailers and Application providers. In the initial launch of the ecosystem, the functions provided by Application Providers will likely be provided by either the Licenced Supplier or Neo-retailer, and so we focus our attention on the game-theoretic requirements to stake on these two actor types. \\
+\noindent In order for the software to be as easy to use for as many consumers as possible, we define $S_C(c) = 0$, and relegate the need to procure and stake Jouls to Licenced Suppliers, Neo-retailers and Application providers. In the initial launch of the ecosystem, the functions provided by Application Providers will likely be provided by either the Licenced Supplier or Neo-retailer, and so we focus our attention on the game-theoretic requirements to stake on these two actor types for the simple case. \\
 
 \noindent We define the stake required by a Licenced Supplier to be: \\
 
@@ -467,39 +473,32 @@ $S_N(c) = c^{(n \cdot e)}$
 
 \vspace{3mm}
 
-\noindent A simple exponential relationship for actor staking also solves for network cohesion; larger organisations require greater investment, and as such, disincentivises larger market players from sudden market disruptions, such as market exits. In the future, this pool of value could also be used for prudential credit management of regulated entities within the market.\\
+\noindent A simple exponential relationship for actor staking also solves for network cohesion; larger organisations require greater investment, and as such, disincentivises larger market players from sudden market disruptions, such as market exits. In the future, this pool of value may also be used for prudential credit management of regulated entities within the market.\\
 
-\noindent The staking rate can be expanded to more sophisticated incentive schemes to encourage desired behaviours. Discounts on the required stake could be implemented for example for retailers as a function of their purchased energy mix (i.e. how much sustainable power is being bought on the wholesale market); or Neo-retailers as a function of how many smart meters are installed in their customer base. \\
+\noindent The staking rate for actors can be extended to more sophisticated incentive schemes to encourage desired behaviours. For example, discounts on the required stake could be implemented for Licensed Suppliers as a function of their purchased energy mix (i.e. how much sustainable power is being bought on the wholesale market); or Neo-retailers as a function of how many smart meters are installed in their customer base. \\
 
-\noindent Jouls escrowed within a stake are released if a customer leaves the Licensed Supplier or the Neo-retailer. In practical terms, these actors will need to maintain a working balance as customers leave and join their organisations. \\
-
-\noindent Licenced Suppliers want to access aggregated member load data from Neo Retailers.\\
-
-\noindent Neo-retailers enter a new tier of customers through continued acquisition (the more customers a Neo-retailer has, the more Jouls are required to be staked at the next staking period). \\
-
-\noindent Customers who wish to participate in an EDAO are required to source Jouls in order to pay for the EDAOs stake to participate in the Enosi ecosystem.
+\noindent Jouls escrowed within a stake are released if a customer leaves the Licensed Supplier or the Neo-retailer. In practical terms, these actors will need to maintain a working balance as customers leave and join their organisations. Similarly, consumers who wish to participate in an EDAO are required to source Jouls in order to pay for the EDAO stake to participate in the Enosi ecosystem.
 
 \subsubsection{Slashing conditions}
 
-Each participant has a value pool relative to their size in the network that remains at stake. \\
-
-\noindent The conditions under which an actor may have their stake slashed include:
+Each participant has a value pool relative to their size in the network that remains at stake. The conditions under which an actor may have their stake slashed include:
 
 \begin{itemize}
+\item{Connection to external networks}
 \item{Data or privacy breach}
 \item{Failure to provide customer data on request}
-\item{Any reasons as voted by network members}
+\item{Reasons as voted by network members}
 \end{itemize}
 
-\noindent Slashed balances can be destroyed or appropriated by the Foundation, for example to subsidise smart meters in the same market. 
+\noindent Slashed balances may either be destroyed or appropriated by the Enosi Foundation to be spent on network-enhancing activities, such as smart meter subsidies within the same market.
 
 \subsection{Fees}
 
-In order to support ongoing operational expenses for the Enosi foundation, a small fee is to be levied on all token transactions. Fees accumulated by the foundation are then able to be sold, such as on a decentralised exchange, back to Neo-retailers or Licensed Suppliers wishing to procure additional tokens. \\
+In order to support ongoing operational expenses for the Enosi foundation, a small fee is to be levied on all token transactions. Fees accumulated by the foundation are then able to be sold, such as on a decentralised exchange, back to Neo-retailers, Licensed Suppliers or other actors wishing to procure tokens.
 
 \subsection{Rate adjustment}
 
-Fee and staking rates are able to be adjusted by the Foundation. Adjustments could include:
+Fee and staking rates are able to be adjusted by the Foundation. Such adjustments could be initiated for any reason in accordance with their mandate, including:
 
 \begin{itemize}
 
@@ -509,62 +508,93 @@ Fee and staking rates are able to be adjusted by the Foundation. Adjustments cou
 
 \end{itemize}
 
-\noindent Further refinement of the cryptoeconomic incentive layers is left to future work, particularly according the operational requirements of the foundation.
+\noindent Further refinement of the cryptoeconomic incentive layers is left to future work and the operational requirements of the Enosi foundation.
 
 
 
 \pagebreak
 \section{Implementation}
 
-\subsection{Implementation options}
+In this section we explore the high level implementation considerations for such an ecosystem.
 
-\textbf{Option A: Public blockchain}: \\
+\subsection{Distributed ledgers}
 
-\noindent Implementation on an open, public blockchain infrastructure, such as Ethereum or EOS, brings challenges relating to scalability and privacy. \\
+There are three key approaches for implementing a distributed ledger technology to achieve Enosi's goals:\\
 
-\textbf{Option B: Private blockhain or distributed ledger}: \\
+\noindent \textbf{Option A: Public gossip blockchain} \\
 
-\noindent unclear whether this needs to be a blockchain / decentralised. Enosi can run this more efficiently as a centralised not-for-profit given the privacy requirements. \\
+\noindent Implementation on an open, public blockchain infrastructure such as Ethereum or EOS. In this scenario, all transactions that are made on the platform are public, including sensitive transactions relating to customer energy usage or customer bill payments. There are privacy technologies that may be available in the future (such as private transactions using encrypted smart contract state), however these are beyond the immediate implementation timeline. There are also still significant scalability challenges which would be required to be overcome in order to cope with near-real-time data injection from smart meters over many thousands of customers. \\
 
-\textbf{Option C: Permissioned blockchain}: \\
+\noindent \textbf{Option B: Permissioned gossip blockchain} \\
 
-\noindent Private parity transactions: Seems that the criticality of the information being protected is only moderate and hence appropriate to have this encrypted, however the performance hit to using this in a ZK Proof renders this an unsuitable option.\\
+\noindent Implementation of a gossip-style blockchain, but with higher transaction throughput and a permissioned validator set. A permissioned chain which sacrifices some security in return for performance may be suitable if the security and privacy model was acceptable by all network actors. Such an implementation would incur a performance overhead from incorporating private transactions, however would be able to access much higher transaction throughput than a public gossip blockchain. In terms of private information required to be protected, even private transaction schemes leak information, and using differential privacy techniques much can be understood from the encrypted state. Although the criticality of the information being protected is only moderate, and goes stale over some time period, the privacy leakage combined with the performance impacts renders this a less-than-ideal option.\\
 
+\noindent \textbf{Option C: Permissioned mesh distributed ledger} \\
 
+\noindent A distributed ledger network where individual actors connect using a standard set of smart contracts. This scenario has the highest data privacy model, as no data private data is shared beyond the required participants, even in encrypted form. Transaction throughput is also high relative to the two aforementioned options as there is far less transaction overhead with a configurable connection mesh (nodes only connect to those nodes they are doing business with). Types of technologies with these properties include IBM's Hyperledger and R3's Corda.
 
-\subsection{Data architecture}
+\subsection{Private data architecture}
 
-A stateful, permissioned architecture was considered (e.g. Plasma) for integration into the main public blockchain, however due to the private nature of individual energy data, the topology of the private energy market necessarily forms an acyclic connected graph. Hence the state of various actors is sharded to preserve isolation of data, for example between two customers, or between a customer and a foreign Licensed Supplier.  \\
+Stateful, permissioned architectures were considered in the previous section (e.g. Plasma on Ethereum) for integration into the main public blockchain, however due to the private nature of customer energy data, scalability constraints of current public blockchains, and the natural topology of the energy market (acyclic graph), a permissioned mesh network (option C) is considered to be the most appropriate architecture.\\
 
-\noindent Parity private transactions currently has as a proof-of-concept implementation available to be used on Ethereum mainnet, or on a Plasma subchain. This may be appropriate given the level of security required around handling metering data (only a moderate privacy requirement). - need to check to see if this is compliant with GDPR. what about using Ring signatures or ZKPs to partially obfuscate? \\
-https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/\\
+\noindent Hence, in order to maximally preserve data privacy, the state of various actors is isolated from other actors where they do not explicitly share a smart contract, such as for example between two customers, or between a customer and a foreign Licensed Supplier. Note however that this requires a separate service to validate the uniqueness of unspent transaction outputs, such as the Notary function in Corda.[ref]
 
-\noindent Alternatively we use a lazy mesh network, such as that provided by Corda, a general purpose distributed ledger technology. \\
+\subsection{Transaction volume}
 
+\noindent We consider the transaction throughput of several Neo-retailers connected to different magnitudes of end-consumers to highlight the transactional limits of near-real-time smart meter oracles. We also consider a Neo-retailer operated as a DAO as a separate case. \\
 
-Assume a 1 minute interval design constraint.
+\noindent This simple analysis provides an indication of required transactions per second for a given number of concurrent customers and a given smart meter data latency. Smart meter oracle injecting information into shared state is assumed to be a low-impact transaction with high-frequency. We ignore low-frequency, high-impact transactions such as billing operations and other customer operations, as well as compounding factors such as peer-to-peer energy trades, in which complex trades might generate multiple transactions per time interval.
 
-NEM12 data file - csv currently
+\subsubsection{Centralised Neo-retailer}
 
-one data trade might be split between a bunch of people, and so with a single Neo, with 10 customers, if there were complicated trades, this might be multiplied by a factor.
+For a Neo-retailer connected to numerous customers (star graph topology): \\
 
+\begin{tabular}{|l|l|l|l|l|}
+ \hline 	
+ \head{Interval} 		& \head{1s} & \head{1min} & \head{5min} & \head{30min}\\
+ \hline 
+ \hline
+ 
+ 1,000 customers:		& 1k t/s	& 17 t/s	& 3 t/s		& 1 t/s \\
+ 200,000 customers:		& 200k t/s	& 3.3k t/s	& 667 t/s	& 111 t/s \\
+ 5,000,000 customers:	& 5M t/s	& 83k t/s	& 17k t/s	& 2.8k t/s \\
+ \hline
+ 
+\end{tabular} \\
+\vspace{2mm}
 
+\noindent As we can see, certain configurations of data latency and concurrent customers reach extremely high transaction throughput. Given Corda's recent scalability figures[ref], we can expect a Neo-retailer with 200,000 customers can expect a smart meter data latency of no better than 1 minute, while a Neo-retailer with 5,000,000 customers can expect no better than 30 minutes.
 
+\subsubsection{Decentralised Neo-retailer}
+
+We now consider a DAO operating as a Neo-retailer (fully connected graph topology), and estimate the required transactions as the square of the number of partipants. \\
+
+\begin{tabular}{|l|l|l|l|l|}
+ \hline 	
+ \head{Interval} 		& \head{1s} & \head{1min} & \head{5min} & \head{30min}\\
+ \hline 
+ \hline
+ 
+ 10 actors:		& 100 t/s	& 1.6 t/s	& 0.3 t/s	& 0.06 t/s \\
+ 100 actors:	& 10k t/s	& 166 t/s	& 33 t/s	& 5.5 t/s \\
+ 1,000 actors:	& 1M t/s	& 16k t/s	& 3.3k t/s	& 555 t/s \\
+ 10,000 actors:	& 100M t/s	& 1.6M t/s	& 333k t/s	& 55k t/s \\
+ \hline
+ 
+\end{tabular} \\
+\vspace{2mm}
+
+\noindent Assuming quadratic transaction scaling, we very quickly run into transactional limits with fully-connected DAOs, with an upper-limit of around 1,000 participants and a 5 minute data latency.\\
+
+\noindent While transaction frequency will become very high for customers seeking near-real-time performance, a typical customer should only need at most around 50MB of metering data per year.[ref-John]
 
 \subsection{Settlement}
 
-\subsubsection{Current state}
+\noindent For the time being, regular banking rails must be used until the adoption of cryptocurrency has become more mainstream and the problems associated with user onboarding and private key management have been broadly solved by the industry. This means that Neo-retailers will hold credit risk in relation to their customers not paying for the electricity they use, and a separate billing function administered on traditional payment rails. \\
 
-\noindent For the time being, regular banking rails must be used until the adoption of cryptocurrency has become more mainstream and the problems associated with user onboarding and private key management have been broadly solved by the industry. 
+\noindent Alternatives to this include Neo-retailers offering discounts for customers who pre-pay, or modelling fiat currency on-ledger as a claim to cash held in a bank account.[ref] \\
 
-regular banking rails
-
-\subsubsection{Future state}
-
-Crypto payment rails, integration of fast payments, or digital fiat.
-
-=> Use on-chain crypto for real-time settlement for cheaper power.
-
+\noindent Ultimately the Enosi ecosystem may interface with cryptocurrency payment rails or integrate into national fast payments networks. We may also see the implementation of national cryptocurrencies or similar programmable money as an alternative that can be used for "on-chain" real-time settlement and thus reduce the price of power even further for end-consumers.
 
 \subsection{External access}
 
@@ -578,35 +608,53 @@ Other actors may wish to be a part of the ecosystem, and these offer another dim
 
 \subsection{Exception management}
 
-\noindent The number of exceptions dealt with by a Neo somewhat limits the maximum size to which they can feasibly grow before it becomes too difficult and expensive to deal with the exceptions. Hence, we assume distributed exceptions to be managed by neos.
+\noindent Customer exception management is the processing of customers who encounter an issue that is outside of normal business processes such as signup and monthly billing.\\
 
-exceptions are distributed over each retailer… in this way they gain the benefits of larger players whilst retaining the agility and lightness of small retailers. If a neoretailer was to grow in size to a significant customer base - this would necessitate a greater investment into the exception process. This, however, over time, will become easier with maturing technology.\\
+\noindent The number of exceptions dealt with by a Neo-retailer somewhat limits the maximum size to which they can feasibly grow; it becomes increasingly difficult and expensive to deal with the exceptions. Hence, we assume these exceptions are sufficiently distributed across all Neo-retailers to be under such a threshold. \\
 
-Preconditions\\
+\noindent Given that exceptions are distributed over each retailer, we are able to gain the benefits of larger players whilst retaining the agility and lightness of small retailers. If a neoretailer was to grow in size to a more significant customer base, this would necessitate a greater investment into the exception process. While this will become easier with maturing technology over time, it is beyond the scope of the business process primitives that Enosi will be providing.
 
-Smart meters are installed for all participants\\
+\subsection{Example implementations}
 
-Provenance\\
+\textbf{BMW Automotive}\\
 
-Merkle proof data reveal?\\
+\noindent Bought a new electric car? Access the network for free and gain full transparency over how your vehicle is charged, or have BMW pay your electricity for the life of the vehicle.\\
 
+\noindent \textbf{Bondi Locals Community}\\
 
-Depending on the frequency of public-chain trades, such as customers joining and leaving various neos, these kinds of trades might need to have their own a plasma chain.
-
-
-Typical customer will need at most around 20MB of metering data per year.
-
-8.3 Example implementations
-BMW Automotive NeoRetailer (by geography)
-
-Bought a new electric car? Access the network for free and gain full transparency over how your vehicle is charged, or have BMW pay your electricity for the life of the vehicle.
+\noindent Dave, a Bondi local, retired electrical engineer and surfer, cares about the environment and his two grandchildren who attend the local public school. He starts a community group through the school to setup a local energy retailer. 
 
 
-Bondi Locals Community
 
-Dave, a Bondi local, retired electrical engineer and surfer, cares about the environment and his two grandchildren who attend the local public school. He starts a community group through the school to setup a local energy retailer 
+% \pagebreak
+% \subsection{Roadmap}
 
+% Description of key ecosystem functions changing over time:
 
+% Function
+% Now
+% Day 1 
+% Grid 2.0
+% Settlement
+% Quarterly billing from meter data in fiat by Retailer.
+% Quarterly billing from meter data in fiat by Neo Retailer.
+% Real time settlement of trades in a stable coin via the blockchain.
+% Customer Onboarding and Management
+% Managed entirely by Retailer.
+% Managed by Neo Retailer.
+% Managed by Neo Retailer.
+% Accounts
+% Managed entirely by the Retailer. Users can switch, but is difficult.
+% Managed entirely by the Neo Retailer. Users can easily switch.
+% Managed entirely by the user’s DApp, they have full autonomy.
+% Customer ‘Control’
+% Virtually none. No transparency.
+% Increased choice about how your energy is sourced and sent. Increased transparency.
+% Complete choice about how your energy is sourced and sent. Complete transparency.
+% P2P Energy Trading
+% Heavily involves centralised parties.
+% Involves centralised parties in a greatly reduced capacity.
+% P2P trading is completely decentralised.
 
 
 
@@ -620,221 +668,6 @@ What is the future of electricity? Sustainable, decentralised generation and con
 \noindent Nodes will hold balances and be able to make purchase and sale decisions based on some predefined rules. The speed of such a system would need to be very fast, and communicate over very reliable networks, however should always default to a known value in case of communication failure.\\
 
 \noindent Such a peer-to-peer trading system may benefit from the tokenisation of stored power, however security challenges relating to how tokens are generated and decay (power generation and storage) would need to be overcome. We leave such challenges for a future date.\\
-
-
-\pagebreak
-\subsection{Roadmap}
-
-Description of key ecosystem functions changing over time:
-
-Function
-Now
-Day 1 
-Grid 2.0
-Settlement
-Quarterly billing from meter data in fiat by Retailer.
-Quarterly billing from meter data in fiat by Neo Retailer.
-Real time settlement of trades in a stable coin via the blockchain.
-Customer Onboarding and Management
-Managed entirely by Retailer.
-Managed by Neo Retailer.
-Managed by Neo Retailer.
-Accounts
-Managed entirely by the Retailer. Users can switch, but is difficult.
-Managed entirely by the Neo Retailer. Users can easily switch.
-Managed entirely by the user’s DApp, they have full autonomy.
-Customer ‘Control’
-Virtually none. No transparency.
-Increased choice about how your energy is sourced and sent. Increased transparency.
-Complete choice about how your energy is sourced and sent. Complete transparency.
-P2P Energy Trading
-Heavily involves centralised parties.
-Involves centralised parties in a greatly reduced capacity.
-P2P trading is completely decentralised.
-
-
-
-
-\pagebreak
-\section{Unused notes}
-
-NOTES
-Staking architecture:
-
-Figure 2.1: Staking architecture	
-
-A summary of Figure 2.1 is given below:
-
-JOULs are required to be paid by all parties who wish to join and participate in a community or EDAO (e.g. prosumers, consumers, businesses, schools, application developers, etc).
-
-These ‘joining’ or participation fees are, in part, paid to the Neo-retailer, as the party who facilitates the community/EDAO’s interaction with the Retail License Holder. 
-
-
-The Neo-retailer is required to pay the Retail License Holder a fee, also in JOULs, for the use of that retail license. 
-
-The Retail License Holder collects JOULs until such a time that they wish to sell them on the open market to convert them to fiat. 
-
-
-Community participants then purchase more JOULs as needed from the open market.
-
-
-Each time JOULs are traded within the ecosystem, a small fee is paid to the Enosi Foundation as a way to cover the costs of running the foundation and encourage active ecosystem development.
-
-In this way, the value of the Enosi ecosystem is cycled through all participants at each layer. 
-
-
-
-
-
-NOTES - 
-
-splitting of existing retail business into retailers and Neo-retailers
-
-DAO - do prepayment, but don’t do regular billing? this could be a value-add for a normal company.
-
-
-In any good token design, it is this fundamental value which is tokenised. In the present case, we believe the JOUL should therefore be a tokenised representation of the value of accessing a retail license, including the secondary effects of such access (e.g. the operation of EDAOs).
-
-WHAT IS A RETAILER TODAY? overarching value and additional value.
-
-Defining value of neo retailer offering, first have to look at the value of the retailer offering and carve out the bits that are the same - the core electricity provision. What is the minimum price for that (stripping away everything but bare boned cost of providing energy) the bits on top are what you're targeting. From that cost (bit on top vs baseline cost) target bit on top. cost in tokens for providing EDAO shit should not exceed the marginal cost. Aim to provide superior features in the form of community values and p2p whilst reducing overall cost. How much will a license holder want to charge and how much Enosi needs/will get
-
-
-
-
-
-
-
-
-
-Figure 3.1: Interactions between actors in the Grid 2.0 scenario. Source: Enosi Whitepaper
-
-
-
-
-
-Figure 2.2: The ecosystem access fee proposed by Enosi
-
-
-
-Staking for each actor, incentive their good behaviour
-Neos would be good candidates to stake tokens. They could be required to stake tokens into the EDAO for the purposes of accessing the Retail License Holder’s licence. 
-create stickiness in the protocol that binds each actor to the system and therefore keeps the system and actors anchored in the Enosi protocol.
-Creating a private part to our blockchain to protect against private data issues.
-Nodes on our chain, neo retailers primed to be nodes. They need the network to run effectively. They also couldn’t exist without the Enosi ecosystem.
-this isn’t strictly speaking true, in theory retailers could ‘farm’ out their retail licence without a blockchain to do this.
-But true community built Neo-retailers might find it difficult to exist without a DAO, for example. 
-Blockchain provides a means to execute certain rules that need to be complied with in order to satisfy requirements of the license.
-Enosi platform provides a competitive marketplace for retail license holders and oracles.
-What’s the value of the network that prevents network copying, BTC example. 
-Is there a way/a need for users to stake tokens?
-Some economic benefit from doing so? Like Casper - you stake tokens for use in some consensus mechanism to ensure the integrity of the network. Earn tokens back as a reward/incentive for doing so.
-Consensus mechanism something akin to a community participation requirement/support a node on the network by contributing JOULs for it to stake in a PoS based consensus protocol?
-Node architecture: each community/EDAO is a node. Nodes are made ‘stronger’/obtain more ‘authority’ based on the number of members they have and therefore the number of JOULs they have staked/paid because every participant in the ecosystem needs to pay (tokens) to play.
-Proof of community?
-In order to prevent a Sybil attack, the protocol must be able to ensure that only legitimate users/customers are onboarded
-NMI registration?
-A fork of EWF proof of authority
-https://github.com/paritytech/parity/wiki/Proof-of-Authority-Chains
-
-Side note: Is any consensus mechanism possible that doesn’t incentivise centralisation: PoW - mining farms, PoS - Stake pools and Stake grinding, Proof of Authority - permissioned network. 
-
-Research other projects that have implemented staking protocols
-Research other consensus mechanisms
-
-how does the edao work?
-privacy to solve?
-how do we feel about architecture?
-power ledger difference?
-What does the end game look like? given scalability solved, what does the world look like without the NEM, without centralised generation? 
-reestablish the primary things we are solving for, i.e. grid2?
-smart metering? 
-monetisation of retail licenses? sam not convinced. In permissioned network
-marketplace for retail licenses?
-What do we do with the stakes? how do the stakes work? 
-Do we abstract away completely from the end user? 
-Map the trust relationships between the different actors: who has to trust who? Where is there a financial tension between actors? 
-
-
-
-
-Each participant should pay JOULs in order to enter/interact with the system as the value of this is represented in JOULs (in order to access the value, one must access the token holding that value).
-Each DAO should need to pay JOULs to inter-communicate… need to really drill into this… feeds into the private/public information split…..(not sure this will make it into the final design).
-need to define what information is needed by a NeoRetailer that is private:
-actual energy consumption/production data
-address details
-billing/finance details
-payment and credit history
-For what reasons would EDAOs want to communicate with other EDAOs?
-any trades across EDAOs would have to occur through the Neos.
-could potentially have a ‘Super’ EDAO, one that encapsulates multiple EDAOs and allows them to cross pollinate/trade.
-As part of a consensus protocol to ensure the integrity of a semi-private blockchain?
-
-The Enosi ecosystem access fee structure proposed in the whitepaper is that the Enosi Foundation and Community would set the access fee to enter an EDAO. This fee would be programmed to reduce at some rate over time, trending towards zero. 
-
-Enosi mandates a minimum fee for the provision of software and aggregated data, the Retail Licence Holding mandates a fee based on their licence, and the NeoRetailer decides what fee they will charge to customers over and above these base fees. These NeoRetailer fees can be levied in either JOUL or dollars. In the future, settlement may also occur purely in JOULs, however this is only if the NeoRetailer / DAO is able to orchestrate such an arrangement between actors.
-
-
-Proposal:
-
-Don’t explicitly define the function which sets the access fees for EDAOs
-This allows for differentiation amongst EDAOs
-i.e. EDAOs can compete on their unique offerings, just like Neo Retailers, and therefore offer different access fees as a direct result.
-Set a minimum price in JOULs to access the Enosi ecosystem, but allow EDAOs and Neo Retailers to compete on top of that. Call this an ecosystem enablement fee (EEF), or similar.
-Specify that the EEF be dynamically set by the Enosi foundation, within a defined governance structure. 
-This helps to mitigate unexpected market events, such as a BTC or ETH crash, by allowing the Foundation to dynamically adjust the fee as is needed to ensure alignment with the Foundations guiding principles.
-
-
-
-
-
-\subsection{more on trust design}
-Customers Trust:\\
-
-Neo’s, initially, to manage their Energy supply and accurately bill them
-Retail License Holders to provide energy from the wholesale market (this trust relationship is implicitly here even though customers don’t interact with the RLH directly)
-Whoever runs nodes on the permissioned network
-Oracles, and thereby oracle providers, for the veracity of their energy trades
-EDAOs and all smart contracts to be secure and exploit resistant, and also to accurately reflect the values enshrined in the community group.
-EDAO creator not to act maliciously/nefariously at time of EDAO creation.
-The Enosi Foundation\\
-
-Neos Trust:\\
-
-Oracles, and thereby oracle providers, for the veracity of energy trades
-Whoever runs nodes on the permissioned network
-EDAOs and all smart contracts to be secure and exploit resistant, and also to accurately reflect the values enshrined in the community group.
-EDAO creator not to act maliciously/nefariously at time of EDAO creation.
-Retail License Holders to accurately and effectively settle the ‘overs and unders’ of the community members managed by the Neo. \\
-
-The Enosi Foundation\\
-
-Retail License Holders Trust:\\
-
-Oracles, and thereby oracle providers, for the veracity of energy trades
-Neo’s to manage the customer relationships
-EDAOs and all smart contracts to ensure Neos have escrowed enough tokens to reduce risk (?) and can legitimately operate.
-EDAO creator not to act maliciously/nefariously at time of EDAO creation.
-Whoever runs nodes on the permissioned network \\
-
-The Enosi foundation\\
-
-Application Developers Trust:\\
-
-Oracles, and thereby oracle providers, for the veracity of energy trades
-Whoever runs nodes on the permissioned network
-EDAOs and all smart contracts to be secure and exploit resistant
-EDAO creator not to act maliciously/nefariously at time of EDAO creation.\\
-
-The Enosi foundation \\
-
-The Enosi Foundation Trusts:\\
-
-EDAO Creators Trust:\\
-
-
-
-\noindent This phase should be kept as open as possible with respect to the roles (and combination of roles) that each actor could play. We should allow retailers and neos to choose their business model. \\
 
 
 

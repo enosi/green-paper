@@ -1,5 +1,5 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Solution Design}{}% 2
+\BOOKMARK [1][-]{section.2}{Solution Description}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Problem Space}{section.2}% 3
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Inefficient buying risk management}{subsection.2.1}% 4
 \BOOKMARK [3][-]{subsubsection.2.1.2}{Grid management incentives}{subsection.2.1}% 5
@@ -7,28 +7,28 @@
 \BOOKMARK [2][-]{subsection.2.3}{End state}{section.2}% 7
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Actor definitions}{subsection.2.3}% 8
 \BOOKMARK [2][-]{subsection.2.4}{Trust Design}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Value Definition}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Value networks}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Value definition}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.3}{Value representation}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.4}{Alternative Token Models}{section.3}% 14
-\BOOKMARK [2][-]{subsection.3.5}{Tokenised electricity}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.6}{Settlement}{section.3}% 16
-\BOOKMARK [1][-]{section.4}{Token Mechanics}{}% 17
-\BOOKMARK [2][-]{subsection.4.1}{Staking}{section.4}% 18
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Staking functions}{subsection.4.1}% 19
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Slashing conditions}{subsection.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.2}{Fees}{section.4}% 21
-\BOOKMARK [2][-]{subsection.4.3}{Rate adjustment}{section.4}% 22
-\BOOKMARK [1][-]{section.5}{Implementation}{}% 23
-\BOOKMARK [2][-]{subsection.5.1}{Implementation options}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.2}{Data architecture}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.3}{Settlement}{section.5}% 26
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Current state}{subsection.5.3}% 27
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Future state}{subsection.5.3}% 28
-\BOOKMARK [2][-]{subsection.5.4}{External access}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.5}{Exception management}{section.5}% 30
-\BOOKMARK [1][-]{section.6}{Future}{}% 31
-\BOOKMARK [2][-]{subsection.6.1}{Roadmap}{section.6}% 32
-\BOOKMARK [1][-]{section.7}{Unused notes}{}% 33
-\BOOKMARK [2][-]{subsection.7.1}{more on trust design}{section.7}% 34
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Other requirements}{subsection.2.4}% 10
+\BOOKMARK [1][-]{section.3}{Value Definition}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Value networks}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Value definition}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Value representation}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Alternative Token Models}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Tokenised electricity}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.6}{Settlement}{section.3}% 17
+\BOOKMARK [1][-]{section.4}{Token Mechanics}{}% 18
+\BOOKMARK [2][-]{subsection.4.1}{Staking}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Staking functions}{subsection.4.1}% 20
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Slashing conditions}{subsection.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.2}{Fees}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Rate adjustment}{section.4}% 23
+\BOOKMARK [1][-]{section.5}{Implementation}{}% 24
+\BOOKMARK [2][-]{subsection.5.1}{Distributed ledgers}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.2}{Private data architecture}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.3}{Transaction volume}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Centralised Neo-retailer}{subsection.5.3}% 28
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Decentralised Neo-retailer}{subsection.5.3}% 29
+\BOOKMARK [2][-]{subsection.5.4}{Settlement}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.5}{External access}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.6}{Exception management}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.7}{Example implementations}{section.5}% 33
+\BOOKMARK [1][-]{section.6}{Future}{}% 34
