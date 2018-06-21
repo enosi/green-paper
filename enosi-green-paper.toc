@@ -4,32 +4,32 @@
 \contentsline {subsection}{\numberline {2.1}Problem Space}{4}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Inefficient buying risk management}{4}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Grid management incentives}{4}{subsubsection.2.1.2}
-\contentsline {subsection}{\numberline {2.2}Solution Space}{5}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}End state}{6}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Actor definitions}{8}{subsubsection.2.3.1}
-\contentsline {subsection}{\numberline {2.4}Trust Design}{9}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Other requirements}{11}{subsubsection.2.4.1}
-\contentsline {section}{\numberline {3}Value Definition}{12}{section.3}
-\contentsline {subsection}{\numberline {3.1}Value networks}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Value definition}{12}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Value representation}{13}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Alternative Token Models}{14}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Tokenised electricity}{14}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Settlement}{14}{subsection.3.6}
-\contentsline {section}{\numberline {4}Token Mechanics}{16}{section.4}
-\contentsline {subsection}{\numberline {4.1}Staking}{16}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Staking functions}{16}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Slashing conditions}{18}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Fees}{18}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Rate adjustment}{18}{subsection.4.3}
-\contentsline {section}{\numberline {5}Implementation}{19}{section.5}
-\contentsline {subsection}{\numberline {5.1}Distributed ledgers}{19}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Private data architecture}{20}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Transaction volume}{20}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Centralised Neo-retailer}{20}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Decentralised Neo-retailer}{21}{subsubsection.5.3.2}
-\contentsline {subsection}{\numberline {5.4}Settlement}{21}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}External access}{21}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Exception management}{22}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Example implementations}{22}{subsection.5.7}
-\contentsline {section}{\numberline {6}Future}{23}{section.6}
+\contentsline {subsection}{\numberline {2.2}Solution Space}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}End state}{7}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Actor definitions}{9}{subsubsection.2.3.1}
+\contentsline {subsection}{\numberline {2.4}Trust Design}{10}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Other requirements}{12}{subsubsection.2.4.1}
+\contentsline {section}{\numberline {3}Value Definition}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Value networks}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Value definition}{13}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Value representation}{14}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Alternative Token Models}{15}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Tokenised electricity}{15}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Settlement}{15}{subsection.3.6}
+\contentsline {section}{\numberline {4}Token Mechanics}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}Staking}{17}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Staking functions}{17}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Slashing conditions}{19}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Fees}{19}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Rate adjustment}{19}{subsection.4.3}
+\contentsline {section}{\numberline {5}Implementation}{20}{section.5}
+\contentsline {subsection}{\numberline {5.1}Distributed ledgers}{20}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Private data architecture}{21}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Transaction volume}{21}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Centralised Neo-retailer}{21}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Decentralised Neo-retailer}{22}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}Settlement}{22}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}External access}{22}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Exception management}{23}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Example implementations}{23}{subsection.5.7}
+\contentsline {section}{\numberline {6}Future}{24}{section.6}
