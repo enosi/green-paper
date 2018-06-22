@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.1)  21 JUN 2018 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.1)  22 JUN 2018 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1687,15 +1687,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 688--689
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
+
+ []
+
 [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 692.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 692.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 694.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 694.
  (./enosi-green-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 692.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 692.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 694.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 694.
 Package rerunfilecheck Info: File `enosi-green-paper.out' has not changed.
 (rerunfilecheck)             Checksum: 05A3A55955AFE596FC9411B106D41D13;2260.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 692.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 694.
  ) 
 Here is how much of TeX's memory you used:
  32955 strings out of 494880
@@ -1717,7 +1722,7 @@ s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on enosi-green-paper.pdf (24 pages, 1406647 bytes).
+Output written on enosi-green-paper.pdf (24 pages, 1406692 bytes).
 PDF statistics:
  404 PDF objects out of 1000 (max. 8388607)
  350 compressed objects within 4 object streams
